@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">PVTcalculator</string>
+
+    <string name="input_fragment">Ввод</string>
+    <string name="plot_fragment">График</string>
+
+    <string name="btn_calc">Расчет</string>
+    <string name="tv_pressure">Давление, атм</string>
+    <string name="tv_temperature">Температура, °С</string>
+    <string name="tv_gas_gravity">Уд. плотность газа</string>
+    <string name="tv_oil_gravity">Уд. плотность нефти</string>
+    <string name="tv_gor">Газовый фактор, м3/м3</string>
+
+    <string name="spinner_pb">Давление насыщения</string>
+    <string name="spinner_rs">Газосодержание</string>
+    <string name="spinner_bo">Объемный коэффициент</string>
+    <string name="spinner_co">Сжимаемость</string>
+    <string name="spinner_rho">Плотность</string>
+    <string name="spinner_mu">Вязкость</string>
+
+    <string name="unit_atm">атм</string>
+    <string name="unit_atm1">атм-1</string>
+    <string name="unit_m3_m3">м3/м3</string>
+    <string name="unit_cp">сП</string>
+    <string name="unit_kg_m3">кг/м3</string>
+
+    <string name="default_pressure">100.0</string>
+    <string name="default_temperature">100.0</string>
+    <string name="default_gas_gravity">0.8</string>
+    <string name="default_oil_gravity">0.8</string>
+    <string name="default_gor">100.0</string>
+</resources>
