@@ -144,42 +144,42 @@ public class InputFragment extends Fragment {
             case 0:
                 for (int p = 0; p < pointsAmountRoot; p++) {
                     for (int t = 0; t < pointsAmountRoot; t++) {
-                        z[p][t] = Converter.psiaToAtm(getPb(Converter.cToF(tY[t]), yg, yAPI, rsb));
+                        z[t][p] = Converter.psiaToAtm(getPb(Converter.cToF(tY[t]), yg, yAPI, rsb));
                     }
                 }
                 break;
             case 1:
                 for (int p = 0; p < pointsAmountRoot; p++) {
                     for (int t = 0; t < pointsAmountRoot; t++) {
-                        z[p][t] = Converter.scfStbToM3M3(getRs(Converter.cToF(tY[t]), Converter.atmToPSIA(pX[p]), yg, yAPI, rsb));
+                        z[t][p] = Converter.scfStbToM3M3(getRs(Converter.cToF(tY[t]), Converter.atmToPSIA(pX[p]), yg, yAPI, rsb));
                     }
                 }
                 break;
             case 2:
                 for (int p = 0; p < pointsAmountRoot; p++) {
                     for (int t = 0; t < pointsAmountRoot; t++) {
-                        z[p][t] = getBo(Converter.cToF(tY[t]), Converter.atmToPSIA(pX[p]), yg, yAPI, rsb);
+                        z[t][p] = getBo(Converter.cToF(tY[t]), Converter.atmToPSIA(pX[p]), yg, yAPI, rsb);
                     }
                 }
                 break;
             case 3:
                 for (int p = 0; p < pointsAmountRoot; p++) {
                     for (int t = 0; t < pointsAmountRoot; t++) {
-                        z[p][t] = Converter.cPsiaToCatm(getCo(Converter.cToF(tY[t]), Converter.atmToPSIA(pX[p]), yg, yAPI, rsb));
+                        z[t][p] = Converter.cPsiaToCatm(getCo(Converter.cToF(tY[t]), Converter.atmToPSIA(pX[p]), yg, yAPI, rsb));
                     }
                 }
                 break;
             case 4:
                 for (int p = 0; p < pointsAmountRoot; p++) {
                     for (int t = 0; t < pointsAmountRoot; t++) {
-                        z[p][t] = Converter.lbFt3toKgM3(getRho(Converter.cToF(tY[t]), Converter.atmToPSIA(pX[p]), yg, yAPI, rsb));
+                        z[t][p] = Converter.lbFt3toKgM3(getRho(Converter.cToF(tY[t]), Converter.atmToPSIA(pX[p]), yg, yAPI, rsb));
                     }
                 }
                 break;
             case 5:
                 for (int p = 0; p < pointsAmountRoot; p++) {
                     for (int t = 0; t < pointsAmountRoot; t++) {
-                        z[p][t] = getMu(Converter.cToF(tY[t]), Converter.atmToPSIA(pX[p]), yg, yAPI, rsb);
+                        z[t][p] = getMu(Converter.cToF(tY[t]), Converter.atmToPSIA(pX[p]), yg, yAPI, rsb);
                     }
                 }
                 break;
